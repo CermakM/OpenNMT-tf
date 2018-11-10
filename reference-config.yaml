@@ -26,7 +26,7 @@ params:
   optimizer_params:
     beta1: 0.8
     beta2: 0.998
-  learning_rate: 0.001
+  learning_rate: 0.005
 
   # (optional) Global parameter initialization [-param_init, param_init].
   param_init: 0.1
@@ -109,15 +109,15 @@ train:
   batch_type: examples
 
   # (optional) Save a checkpoint every this many steps.
-  save_checkpoints_steps: 500
+  save_checkpoints_steps: 10
   # (optional) How many checkpoints to keep on disk.
   keep_checkpoint_max: 3
 
   # (optional) Save summaries every this many steps.
-  save_summary_steps: 100
+  save_summary_steps: 10
 
   # (optional) Train for this many steps. If not set, train forever.
-  train_steps: 10000
+  train_steps: 150
   # (optional) If true, makes a single pass over the training data (default: false).
   single_pass: false
 
